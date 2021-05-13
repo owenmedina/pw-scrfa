@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.scss';
+import styles from './App.module.scss';
 import Header from "./components/Header";
 import MainHeading from "./components/MainHeading";
 import Pages from "./components/Pages";
@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Header />
       <MainHeading />
       <Pages />
