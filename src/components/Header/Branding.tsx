@@ -6,8 +6,9 @@ const Branding = () => {
     return <div className={styles.branding}>
         <img src={rfaLogo} alt="RFA Logo" className={styles['branding__logo']}></img>
         <span>
-            <div className={`header-7 ${styles['branding__name']}`}>
-                South Carolina Revenue and Fiscal Affairs Office
+            <div>
+                <div className={`header-7 ${styles['branding__name']}`}>South Carolina</div>
+                <div className={`header-7 ${styles['branding__name']}`}>Revenue and Fiscal Affairs Office</div>
             </div>
             <div className={`subheader-7 ${styles['branding__description']}`}>
                 Transforming data into solutions for South Carolina
