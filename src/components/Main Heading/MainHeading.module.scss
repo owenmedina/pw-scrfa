@@ -1,0 +1,15 @@
+.main-heading {
+  grid-row: main-heading-start / main-heading-end;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("./assets/img/background-header.jpg");
+  background-size: cover;
+}
+
+.main-heading__title {
+  width: 45%;
+}

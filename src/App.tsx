@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './App.module.scss';
 import Header from "./components/Header/Header";
-import MainHeading from "./components/MainHeading";
+import MainHeading from "./components/Main Heading/MainHeading";
 import Pages from "./components/Pages";
 import Info from "./components/Info";
 import Footer from "./components/Footer";
