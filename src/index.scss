@@ -1,4 +1,6 @@
 /////////////////////// COLORS ///////////////////////
+$color-pale-blue: #415a7b;
+$color-pastel-blue: #93a4bd;
 $color-light-blue: #3068ad;
 $color-mid-blue: #225089;
 $color-dark-blue: #1b3a61;
@@ -22,4 +24,20 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+/////////////////////// GLOBAL CLASSES ///////////////////////
+.header-7 {
+  font-family: $font-roboto-slab;
+  color: $color-dark-blue;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.subheader-7 {
+  font-family: $font-roboto-condensed;
+  color: $color-pale-blue;
+  font-style: italic;
+  font-size: 1.6rem;
 }
