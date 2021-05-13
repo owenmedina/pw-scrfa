@@ -1,0 +1,24 @@
+@import "../../index.scss";
+
+.button-search {
+  background-color: $color-cerulean-blue;
+  color: $color-white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-family: $font-open-sans;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__svg {
+    fill: currentColor;
+  }
+}
+
+.mr-sm {
+  margin-right: 0.5rem;
+}

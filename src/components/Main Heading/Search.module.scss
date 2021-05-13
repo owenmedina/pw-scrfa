@@ -1,11 +1,13 @@
 @import "../../index.scss";
 
 .search__form {
-  width: 45%;
+  width: 42.5%;
+
+  display: grid;
+  grid-template-columns: 78.5% 1fr;
 
   .search__input {
     height: 4.5rem;
-    width: 70%;
     padding: 1rem;
     outline: none;
 
@@ -28,4 +30,8 @@
       color: $color-mid-gray-1;
     }
   }
+}
+
+.mr-sm {
+  margin-right: 1rem;
 }
