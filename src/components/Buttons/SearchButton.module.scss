@@ -1,0 +1,12 @@
+@import "../../index.scss";
+
+.button-search {
+  padding: 0.5rem;
+  background-color: $color-white;
+  border: 1px $color-cerulean-blue solid;
+  border-radius: 3px;
+}
+
+.search-svg {
+  fill: $color-cerulean-blue;
+}
