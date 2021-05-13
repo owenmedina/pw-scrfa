@@ -1,0 +1,18 @@
+@import "../../index.scss";
+
+.nav-links {
+  height: 100%;
+  width: 27.5%;
+
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+}
+
+.nav-link {
+  font-family: $font-open-sans;
+  font-size: 1.25rem;
+  color: $color-dark-blue;
+  text-transform: uppercase;
+  cursor: pointer;
+}
