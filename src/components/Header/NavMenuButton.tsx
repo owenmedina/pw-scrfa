@@ -1,5 +1,5 @@
 import styles from './NavMenuButton.module.scss';
-import {ReactComponent as NavMenuIcon} from './menu.svg';
+import {ReactComponent as NavMenuIcon} from './assets/svg/menu.svg';
 
 const NavMenuButton = () => {
     return <div className={styles['nav-menu-button']}>
