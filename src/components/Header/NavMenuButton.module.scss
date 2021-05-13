@@ -1,0 +1,27 @@
+@import "../../index.scss";
+
+.nav-menu-button {
+  height: 100%;
+  background-color: $color-light-blue;
+
+  flex-basis: 5%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu-icon {
+  fill: $color-white;
+  height: 5rem;
+  width: 5rem;
+}
+
+.nav-menu-title {
+  font-family: $font-open-sans;
+  color: $color-white;
+  letter-spacing: 0.2rem;
+  position: relative;
+  top: -1rem;
+}

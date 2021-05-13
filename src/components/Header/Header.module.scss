@@ -1,0 +1,13 @@
+@import "../../index.scss";
+
+.header {
+  height: 100%;
+  width: 100%;
+  border-bottom: 0.75rem $color-dark-blue solid;
+
+  grid-row: header-start / header-end;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

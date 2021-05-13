@@ -1,0 +1,19 @@
+.branding {
+  height: 100%;
+  width: 35%;
+  margin: 0 auto 0 2%;
+
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    height: 8rem;
+    width: 8rem;
+    margin-right: 3%;
+  }
+
+  &__name,
+  &__description {
+    text-align: left;
+  }
+}
