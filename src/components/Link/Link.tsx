@@ -4,12 +4,12 @@ import styles from './Link.module.scss';
 interface Props {
     text: string;
     reference: string;
-    otherClasses: string[];
+    otherClasses?: string[];
 }
 
 const Link: FC<Props> = ({text, reference, otherClasses}) => {
-    const classes = otherClasses.slice(0);
-    classes.push(styles.link);
+    const classes = otherClasses ? otherClasses.slice(0) : [];
+    classes.push(styles.link)
     return <a className={classes.join(' ')} href={reference}>{text}</a>;
 }
 
