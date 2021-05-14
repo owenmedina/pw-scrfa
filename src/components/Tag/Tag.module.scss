@@ -1,0 +1,11 @@
+@import "../../index.scss";
+
+.tag {
+  display: inline-block;
+  padding: 3px;
+  border-radius: 2px;
+  background-color: $color-mid-gray-2;
+  font-size: 1rem;
+  font-family: $font-open-sans;
+  color: $color-white;
+}
