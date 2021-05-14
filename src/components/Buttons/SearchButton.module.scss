@@ -1,20 +1,24 @@
 @import "../../index.scss";
 
 .button-search {
-  padding: 0.5rem;
-  background-color: $color-white;
-  border: 1px $color-cerulean-blue solid;
-  border-radius: 3px;
-
+  background-color: $color-cerulean-blue;
+  color: $color-white;
+  border: none;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+
+  &__text {
+    font-family: $font-open-sans;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__svg {
+    fill: currentColor;
+  }
 }
 
 .mr-sm {
-  margin-right: 0.75%;
-}
-
-.search-svg {
-  fill: $color-cerulean-blue;
+  margin-right: 0.5rem;
 }

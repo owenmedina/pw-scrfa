@@ -1,0 +1,37 @@
+@import "../../index.scss";
+
+.search__form {
+  width: 42.5%;
+
+  display: grid;
+  grid-template-columns: 78.5% 1fr;
+
+  .search__input {
+    height: 4.5rem;
+    padding: 1rem;
+    outline: none;
+
+    font-size: 1.6rem;
+    font-family: $font-open-sans;
+    font-weight: 600;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 1.25rem $color-cerulean-blue;
+      border: none;
+      border-radius: 1px;
+    }
+
+    &::placeholder {
+      font-size: 1.6rem;
+      font-family: $font-open-sans;
+      font-weight: 600;
+      font-style: italic;
+      color: $color-mid-gray-1;
+    }
+  }
+}
+
+.mr-sm {
+  margin-right: 1rem;
+}
