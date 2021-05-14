@@ -2,5 +2,5 @@
   text-align: center;
 
   display: grid;
-  grid-template-rows: [header-start] 12rem [header-end main-heading-start] 40rem [main-heading-end pages-start] 30rem [pages-end info-start] 130rem [info-end footer-start] 30rem [footer-end];
+  grid-template-rows: [header-start] 12rem [header-end main-heading-start] 40rem [main-heading-end sections-start] 30rem [sections-end info-start] 130rem [info-end footer-start] 30rem [footer-end];
 }
