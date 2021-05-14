@@ -6,22 +6,26 @@
   font-weight: bold;
   width: 100%;
   text-align: left;
+  font-size: 2.5rem;
+
+  position: relative;
+}
+
+%bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 0;
 }
 
 .heading-1 {
   @extend %heading-core;
   text-transform: uppercase;
-  font-size: 2.5rem;
-
-  position: relative;
   line-height: 3.25;
 
   &::before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: "";
-    height: 0;
+    @extend %bar;
     width: 100%;
     border-bottom: 1rem $color-dark-blue solid;
     background-color: currentColor;
@@ -30,8 +34,11 @@
 
 .heading-2 {
   @extend %heading-core;
-}
+  line-height: 2.75;
 
-.heading-1,
-.heading-2 {
+  &::before {
+    @extend %bar;
+    width: 4.25rem;
+    border-bottom: 0.3rem $color-gold solid;
+  }
 }
