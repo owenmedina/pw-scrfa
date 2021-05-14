@@ -1,0 +1,8 @@
+%spacer {
+  width: 1rem;
+}
+
+.spacer-md {
+  @extend %spacer;
+  height: 3rem;
+}
