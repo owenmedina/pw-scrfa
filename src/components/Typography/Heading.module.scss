@@ -1,0 +1,30 @@
+@import "../../index.scss";
+
+.heading-1 {
+  font-family: $font-open-sans;
+  color: $color-dark-blue;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+
+  position: relative;
+  line-height: 3.25;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 0;
+    width: 100%;
+    border-bottom: 1rem $color-dark-blue solid;
+    background-color: currentColor;
+  }
+}
+
+.heading-2 {
+  font-family: $font-open-sans;
+  color: $color-dark-blue;
+}
