@@ -1,0 +1,21 @@
+@import "../../index.scss";
+
+.card {
+  background-color: $color-white-2;
+  padding: 4rem 5rem;
+  box-shadow: 0 0 4px $color-light-gray-2;
+
+  &:not(:last-of-type) {
+    margin-right: 4rem;
+  }
+
+  & > :first-child {
+    height: 10rem;
+    width: 10rem;
+  }
+
+  &__title {
+    margin: 2rem auto 0 auto;
+    width: 12rem;
+  }
+}
