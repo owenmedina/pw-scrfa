@@ -1,0 +1,15 @@
+%column {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.column-1 {
+  @extend %column;
+}
+
+.column-2 {
+  @extend %column;
+  column-count: 3;
+  column-gap: 5.25rem;
+}
