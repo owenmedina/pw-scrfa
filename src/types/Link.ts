@@ -16,16 +16,19 @@ export class Link implements LinkInterface {
     }
 }
 
-interface LinkDescriptionInterface {
-    date: Date;
+export interface DescriptionDetails {
+    date?: Date;
     description?: string;
+    tags?: string[];
+}
+
+interface LinkDescriptionInterface {
+    details?: DescriptionDetails;
 }
 
 export class LinkDescription implements LinkDescriptionInterface {
-    date: Date;
-    description?: string;
-    constructor(date: Date, description?: string) {
-        this.description = description;
-        this.date = date;
+    details?: DescriptionDetails;
+    constructor(details?: DescriptionDetails) {
+        this.details = details;
     }
 }
