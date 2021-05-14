@@ -1,0 +1,10 @@
+@import "../../index.scss";
+
+.description {
+  &__text {
+    font-family: $font-open-sans;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: $color-dark-gray;
+  }
+}
