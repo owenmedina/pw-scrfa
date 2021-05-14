@@ -3,4 +3,8 @@
 .sections {
   grid-row: sections-start / sections-end;
   background-color: $color-light-gray-1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
