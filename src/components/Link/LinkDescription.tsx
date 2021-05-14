@@ -9,7 +9,7 @@ interface Props {
 
 const LinkDescription: FC<Props> = ({details}) => {
     if (!details) return <div></div>;
-    
+
     const {description, date, tags} = details;
     const year = 'numeric';
     const month = 'short';
@@ -23,9 +23,9 @@ const LinkDescription: FC<Props> = ({details}) => {
             {description}
             </div>}
         <div>
-            {date && <span>
-                <span className={[styles['date__label'], styles.date].join(' ')}>Published: </span>
-                <span className={[styles['date__date'], styles.date].join(' ')}>{`${formattedMonth} ${formattedDay}, ${formattedYear}`}</span>
+            {date && <span className={styles.date}>
+                <span className={styles['date__label']}>Published: </span>
+                <span className={styles['date__date']}>{`${formattedMonth} ${formattedDay}, ${formattedYear}`}</span>
             </span>}
             {tags && tags.map(tag => <Tag text={tag}/>)}
         </div>
