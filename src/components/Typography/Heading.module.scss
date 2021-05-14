@@ -1,13 +1,17 @@
 @import "../../index.scss";
 
-.heading-1 {
+%heading-core {
   font-family: $font-open-sans;
   color: $color-dark-blue;
-  text-transform: uppercase;
-  font-size: 2.5rem;
   font-weight: bold;
   width: 100%;
   text-align: left;
+}
+
+.heading-1 {
+  @extend %heading-core;
+  text-transform: uppercase;
+  font-size: 2.5rem;
 
   position: relative;
   line-height: 3.25;
@@ -25,6 +29,9 @@
 }
 
 .heading-2 {
-  font-family: $font-open-sans;
-  color: $color-dark-blue;
+  @extend %heading-core;
+}
+
+.heading-1,
+.heading-2 {
 }
