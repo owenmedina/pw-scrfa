@@ -11,6 +11,11 @@
     text-align: left;
     font-size: 1.5rem;
 
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: $color-white;
+    }
+
     &:not(:last-child) {
       margin-bottom: 1.5rem;
     }
