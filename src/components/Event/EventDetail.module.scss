@@ -4,10 +4,8 @@
   display: flex;
   align-items: start;
   &__icon {
+    padding: 0.15rem;
     fill: $color-gold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     & > * {
       height: 1.3rem;
     }
