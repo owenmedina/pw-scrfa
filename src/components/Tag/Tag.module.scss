@@ -13,3 +13,17 @@
   color: $color-white;
   background-color: $color-mid-gray-2;
 }
+
+.tag--gold {
+  @extend %tag;
+  color: $color-dark-gray;
+  font-weight: 600;
+  background-color: $color-pale-gold;
+}
+
+.tag--red {
+  @extend %tag;
+  color: $color-white;
+  font-weight: 600;
+  background-color: $color-red;
+}
