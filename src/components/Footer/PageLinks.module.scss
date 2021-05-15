@@ -1,0 +1,18 @@
+@import "../../index.scss";
+
+.page-links {
+  display: flex;
+  flex-direction: column;
+
+  .page-link {
+    text-decoration: none;
+    color: $color-white;
+    font-family: $font-open-sans;
+    text-align: left;
+    font-size: 1.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
