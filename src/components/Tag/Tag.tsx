@@ -3,9 +3,10 @@ import styles from "./Tag.module.scss";
 
 interface Props {
     text: string;
+    color: string;
 }
-const Tag: FC<Props> = ({text}) => {
-    return <div className={styles.tag}>{text}</div>
+const Tag: FC<Props> = ({text, color}) => {
+    return <div className={styles[`tag--${color}`]}>{text}</div>
 }
 
 export default Tag;

@@ -1,11 +1,15 @@
 @import "../../index.scss";
 
-.tag {
+%tag {
   display: inline-block;
   padding: 3px;
   border-radius: 2px;
-  background-color: $color-mid-gray-2;
   font-size: 1rem;
   font-family: $font-open-sans;
+}
+
+.tag--gray {
+  @extend %tag;
   color: $color-white;
+  background-color: $color-mid-gray-2;
 }
