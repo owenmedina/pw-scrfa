@@ -1,0 +1,14 @@
+@import "../../index.scss";
+
+.scroll-to-top {
+  font-family: $font-open-sans;
+  font-size: 1.45rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  & > *:first-child {
+    margin-right: 1.15rem;
+  }
+}

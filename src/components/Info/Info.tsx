@@ -8,6 +8,7 @@ import {Link, LinkDescription } from '../../types/Link';
 import EventComponent from '../Event/Event';
 import EventClass from '../../types/Event';
 import Tag from '../../types/Tag';
+import ScrollToTop from '../Buttons/ScrollToTop';
 
 
 const Info = () => {
@@ -68,7 +69,10 @@ const Info = () => {
             </div>
         } contentColumns={1}/>
         </div>
-    
+
+        <div className={styles['info__footer']}>
+            <ScrollToTop />
+        </div>
     </div>
 }
 
