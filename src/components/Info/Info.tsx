@@ -32,7 +32,7 @@ const Info = () => {
     new EventClass('Board of Economic Advisors Meeting', 'Room 417, Bowers Conference Room, Rembert Dennis Building', new Date(2020, 10, 25, 13, 30, 0), '(803)-734-2265'),
     new EventClass('Board of Economic Advisors Meeting', 'Room 417, Bowers Conference Room, Rembert Dennis Building', new Date(2020, 10, 28, 13, 30, 0), '8037342265')];
 
-    const articles = [<Article title='Popular Services and Links' titleStyle={1} content={<div>{servicesAndLinks.map(l => <LinkComponent otherClasses={[styles['info__content']]}text={l.title} reference={l.reference}/>)}</div>}/>,
+    const articles = [<Article title='Popular Services and Links' titleStyle={1} content={<div>{servicesAndLinks.map(l => <LinkComponent otherClasses={[styles['info__content']]}text={l.title} reference={l.reference}/>)}</div>} contentColumns={3}/>,
     <Article title='Recent Updates' titleStyle={2} content={<div>{recentUpdates.map(u => <div className={styles['info__content']}>
         <LinkComponent text={u.title} reference={u.reference}/>
         {u.description && <div><Spacer size={'xs'}/>
@@ -40,16 +40,35 @@ const Info = () => {
     </div>
     )}
         <SolidButton text={'View More'} />
-    </div>}/>,
+    </div>} contentColumns={1}/>,
     <Article title={'Calendar of Events'} titleStyle={2} content={
         <div>
             {events.map(event => <EventComponent otherClasses={[styles['info__content']]} event={event}/>)}
             <SolidButton text={'View All Events'} />
         </div>
-    } />];
+    } contentColumns={1}/>];
 
     return <div className={styles.info}>
-        {articles}
+        <Article title='Popular Services and Links' titleStyle={1} content={<div>{servicesAndLinks.map(l => <LinkComponent otherClasses={[styles['info__content']]}text={l.title} reference={l.reference}/>)}</div>} contentColumns={3}/>
+        <Spacer size={'xl'} />
+        <div>
+            <Article title='Recent Updates' titleStyle={2} content={<div>{recentUpdates.map(u => <div className={styles['info__content']}>
+            <LinkComponent text={u.title} reference={u.reference}/>
+            {u.description && <div><Spacer size={'xs'}/>
+            <LinkDescriptionComponent details={u.description.details}/> </div>}
+        </div>
+        )}
+            <SolidButton text={'View More'} />
+        </div>} contentColumns={1}/>
+
+        <Article title={'Calendar of Events'} titleStyle={2} content={
+            <div>
+                {events.map(event => <EventComponent otherClasses={[styles['info__content']]} event={event}/>)}
+                <SolidButton text={'View All Events'} />
+            </div>
+        } contentColumns={1}/>
+        </div>
+    
     </div>
 }
 

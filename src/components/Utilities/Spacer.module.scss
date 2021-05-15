@@ -11,3 +11,8 @@
   @extend %spacer;
   height: 3rem;
 }
+
+.spacer-xl {
+  @extend %spacer;
+  height: 6rem;
+}
