@@ -13,10 +13,13 @@ const iconDict = {
 interface Props {
     icon: keyof (typeof iconDict);
     text: string;
+    otherClasses?: string[];
 }
 
-const EventDetail: FC<Props> = ({icon, text}) => {
-    return <div className={styles['event-detail']}>
+const EventDetail: FC<Props> = ({icon, text, otherClasses}) => {
+    const classes = otherClasses ? otherClasses.slice(0) : [];
+    classes.push(styles['event-detail']);
+    return <div className={classes.join(' ')}>
         <span className={styles['event-detail__icon']}>{iconDict[icon] as JSX.Element}</span>
         <span className={styles['event-detail__text']}>{text}</span>
     </div>;
