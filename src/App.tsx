@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import MainHeading from "./components/Main Heading/MainHeading";
 import Sections from "./components/Sections/Sections";
 import Info from './components/Info/Info';
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import Section from './types/Section';
 import './index.scss';
 
