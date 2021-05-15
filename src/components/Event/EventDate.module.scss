@@ -1,0 +1,25 @@
+@import "../../index.scss";
+
+.event-date {
+  font-family: $font-open-sans;
+  color: $color-white;
+  font-weight: 600;
+  background-color: $color-gold;
+  height: 7rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__month {
+    text-transform: uppercase;
+    position: relative;
+    top: 0.55rem;
+    font-size: 1.35rem;
+  }
+
+  &__day {
+    font-size: 2.65rem;
+  }
+}

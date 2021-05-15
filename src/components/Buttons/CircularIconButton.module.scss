@@ -1,0 +1,15 @@
+@import "../../index.scss";
+
+.button-icon-circular {
+  border: none;
+  border-radius: 50%;
+  background-color: #cdd9ea;
+  fill: $color-cerulean-blue;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
