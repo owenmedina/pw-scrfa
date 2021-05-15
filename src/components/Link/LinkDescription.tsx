@@ -27,7 +27,7 @@ const LinkDescription: FC<Props> = ({details}) => {
                 <span className={styles['date__label']}>Published: </span>
                 <span className={styles['date__date']}>{`${formattedMonth} ${formattedDay}, ${formattedYear}`}</span>
             </span>}
-            {tags && tags.map(tag => <Tag text={tag}/>)}
+            {tags && tags.map(tag => <Tag text={tag} color={'gray'}/>)}
         </div>
     </div>;
 }
