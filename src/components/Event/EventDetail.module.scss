@@ -1,0 +1,22 @@
+@import "../../index.scss";
+
+.event-detail {
+  display: flex;
+  align-items: start;
+  &__icon {
+    fill: $color-gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > * {
+      height: 1.3rem;
+    }
+  }
+
+  &__text {
+    font-family: $font-open-sans;
+    color: $color-dark-gray;
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+  }
+}
