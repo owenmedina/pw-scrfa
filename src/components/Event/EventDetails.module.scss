@@ -1,7 +1,9 @@
 @import "../../index.scss";
 
 .event-details {
-  border-bottom: 0.15rem solid $color-light-gray-1;
+  &:not(:last-of-type) {
+    border-bottom: 0.15rem solid $color-light-gray-1;
+  }
 
   &__title {
     font-family: $font-open-sans;
