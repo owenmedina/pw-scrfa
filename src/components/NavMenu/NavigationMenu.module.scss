@@ -1,7 +1,6 @@
 @import "../../index.scss";
 
 .navigation-menu {
-  display: block;
   position: absolute;
   top: 100%;
   left: 0;
@@ -9,10 +8,13 @@
   height: 52rem;
   width: 100vw;
 
+  opacity: 100%;
+  transition: opacity 0.25s ease-in;
+
   display: flex;
   flex-direction: row;
 }
 
 .navigation-menu--hidden {
-  display: none;
+  opacity: 0;
 }

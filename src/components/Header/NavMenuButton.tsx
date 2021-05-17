@@ -19,6 +19,7 @@ const NavMenuButton: FC<Props> = ({links}) => {
     return <button className={styles['nav-menu-button']} onClick={toggleNavMenu}>
         {navMenuOpen ? <NavCloseMenuIcon className={styles['nav-menu-icon']}/> : <NavMenuIcon className={styles['nav-menu-icon']}/>}
         <div className={styles['nav-menu-title']}>{navMenuOpen ? 'CLOSE' : 'MENU'}</div>
+        {!navMenuOpen && <div className={styles['nav-menu--empty']}></div>}
         <NavigationMenu show={navMenuOpen} links={links}/>
     </button>;
 }

@@ -28,3 +28,11 @@
   position: relative;
   top: -1rem;
 }
+
+.nav-menu--empty {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  width: 100vw;
+  border-bottom: 0.75rem $color-dark-blue solid;
+}
