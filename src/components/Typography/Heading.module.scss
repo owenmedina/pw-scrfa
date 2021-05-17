@@ -42,3 +42,17 @@
     border-bottom: 0.3rem $color-gold solid;
   }
 }
+
+.heading-3 {
+  @extend %heading-core;
+  line-height: 2.75;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &::before {
+    @extend %bar;
+    width: 4.25rem;
+    border-bottom: 0.3rem $color-gold solid;
+  }
+}
