@@ -11,6 +11,12 @@
   grid-template-columns: repeat(3, 1fr);
   column-gap: 4rem;
 
+  &__heading {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   ul {
     &:not(:nth-of-type(3)) {
       margin: 1.75rem 0;

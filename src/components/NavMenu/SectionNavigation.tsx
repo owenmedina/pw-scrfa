@@ -10,7 +10,7 @@ const SectionNavigation: FC = () => {
     {title: 'Legislative Fiscal Impacts', links: [new Link('Current General Assembly Session', 'https://www.google.com'), new Link('Previous General Assembly Session', 'https://www.google.com'), new Link('Forms', 'https://www.google.com')]}];
     return <div className={styles['section-navigation']}>
             {sections.map(section => <div>
-                <Heading text={section.title} style={3}/>
+                <Heading text={section.title} style={3} otherClasses={[styles['section-navigation__heading']]}/>
                 <ul>
                     {section.links.map(l => <li><a href={l.reference}>{l.title}</a></li>)}
                 </ul>
