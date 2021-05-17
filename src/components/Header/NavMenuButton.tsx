@@ -1,9 +1,14 @@
 import styles from './NavMenuButton.module.scss';
 import {ReactComponent as NavMenuIcon} from './assets/svg/menu.svg';
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import NavigationMenu from '../NavMenu/NavigationMenu';
+import { Link } from '../../types/Link';
 
-const NavMenuButton = () => {
+interface Props {
+    links: Link[];
+}
+
+const NavMenuButton: FC<Props> = ({links}) => {
     const [navMenuOpen, setNavMenuOpen] = useState(false);
 
     const toggleNavMenu = () => {
@@ -14,7 +19,7 @@ const NavMenuButton = () => {
     return <button className={styles['nav-menu-button']} onClick={toggleNavMenu}>
         <NavMenuIcon className={styles['nav-menu-icon']}/>
         <div className={styles['nav-menu-title']}>MENU</div>
-        <NavigationMenu />
+        <NavigationMenu links={links}/>
     </button>;
 }
 
