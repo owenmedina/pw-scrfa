@@ -1,0 +1,10 @@
+@import "../../index.scss";
+
+.footer {
+  grid-row: footer-start / footer-end;
+  background-color: $color-dark-blue;
+  padding: 4rem 10rem;
+
+  display: flex;
+  justify-content: space-between;
+}
