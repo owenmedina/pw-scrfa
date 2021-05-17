@@ -4,14 +4,14 @@
   flex-basis: 21%;
   background-color: $color-white-2;
   height: 100%;
-  padding-top: 1.25rem;
+  padding-top: 1.4rem;
 
   box-shadow: inset 5px 5px 5px -5px $color-light-gray-3;
 
   li {
     list-style: none;
     margin: 0 4.5rem;
-    padding: 1.5rem 0;
+    padding: 1.25rem 0;
 
     &:not(:last-of-type) {
       border-bottom: 1px solid $color-light-gray-2;
@@ -22,7 +22,7 @@
       font-family: $font-open-sans;
       color: $color-dark-gray;
       font-weight: bold;
-      font-size: 1.65rem;
+      font-size: 1.55rem;
     }
   }
 }
