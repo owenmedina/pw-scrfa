@@ -26,9 +26,7 @@
   }
 
   .button-more {
-    @include respond(xxxl) {
-      display: inline-block;
-    }
+    display: inline-block;
   }
 
   &__footer {
