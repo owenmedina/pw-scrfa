@@ -3,6 +3,9 @@
 .nav-menu-button {
   height: 100%;
   background-color: $color-light-blue;
+  border: none;
+  cursor: pointer;
+  position: relative;
 
   flex-basis: 5%;
 
@@ -24,4 +27,12 @@
   letter-spacing: 0.2rem;
   position: relative;
   top: -1rem;
+}
+
+.nav-menu--empty {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  width: 100vw;
+  border-bottom: 0.75rem $color-dark-blue solid;
 }

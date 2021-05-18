@@ -3,7 +3,10 @@
 .header {
   height: 100%;
   width: 100%;
-  border-bottom: 0.75rem $color-dark-blue solid;
+  position: sticky;
+  top: 0;
+  background-color: $color-white;
+  z-index: 9999;
 
   grid-row: header-start / header-end;
 
