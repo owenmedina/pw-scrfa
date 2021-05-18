@@ -27,8 +27,34 @@ $font-open-sans: "Open Sans", sans-serif;
 $font-roboto-condensed: "Roboto Condensed", sans-serif;
 $font-roboto-slab: "Roboto Slab", serif;
 
+/////////////////////// MIXINS ///////////////////////
+@mixin respond($bp) {
+  @if ($bp == xxxl) {
+    @media only screen and (max-width: 84.375em) {
+      // 1350px
+      @content;
+    }
+  }
+  @if ($bp == xxl) {
+    @media only screen and (max-width: 81.875em) {
+      // 1310px
+      @content;
+    }
+  }
+  @if ($bp == xl) {
+    @media only screen and (max-width: 66.25em) {
+      // 1060px
+      @content;
+    }
+  }
+}
+
 html {
   font-size: 62.5%; // each rem is 10px by default
+
+  @include respond(xl) {
+    font-size: 55%;
+  }
 
   box-sizing: border-box;
 }
@@ -71,20 +97,4 @@ h3 {
   color: $color-pale-blue;
   font-style: italic;
   font-size: 1.6rem;
-}
-
-/////////////////////// MIXINS ///////////////////////
-@mixin respond($bp) {
-  @if ($bp == xxxl) {
-    @media only screen and (max-width: 84.375em) {
-      // 1350px
-      @content;
-    }
-  }
-  @if ($bp == xxl) {
-    @media only screen and (max-width: 81.875em) {
-      // 1310px
-      @content;
-    }
-  }
 }
