@@ -59,13 +59,13 @@ const Info = () => {
             <LinkDescriptionComponent details={u.description.details}/> </div>}
         </div>
         )}
-            <SolidButton text={'View More'} />
+            <SolidButton text={'View More'} otherClasses={[styles['button-more']]}/>
         </div>} contentColumns={1}/>
 
         <Article title={'Calendar of Events'} titleStyle={2} content={
             <div>
                 {events.map(event => <EventComponent otherClasses={[styles['info__content']]} event={event} key={event.id}/>)}
-                <SolidButton text={'View All Events'} />
+                <SolidButton text={'View All Events'} otherClasses={[styles['button-more']]}/>
             </div>
         } contentColumns={1}/>
         </div>
