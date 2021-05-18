@@ -15,7 +15,7 @@ const SLForm: FC<Props> = ({buttonText, placeholder, buttonStyle, otherClasses})
     classes.push(styles['search-form']);
     return <form className={classes.join(' ')}>
             <input className={`${styles['search-form__input']} ${styles['mr-sm']}`} placeholder={placeholder}></input>
-            {buttonStyle === 1 ? <SearchButton /> : <OutlineButton text={buttonText}/>}
+            <OutlineButton text={buttonText}/>
     </form>;
 };
 
