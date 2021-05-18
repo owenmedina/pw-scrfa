@@ -10,6 +10,16 @@
     height: 8rem;
     width: 8rem;
     margin-right: 3%;
+    opacity: 100%;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 100%;
+    }
   }
 
   &__name,

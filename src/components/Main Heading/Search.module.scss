@@ -29,6 +29,11 @@
       font-style: italic;
       color: $color-mid-gray-1;
     }
+
+    &:disabled {
+      background-color: $color-mid-gray-1;
+      border: none;
+    }
   }
 }
 
