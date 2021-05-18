@@ -35,5 +35,10 @@
       font-weight: 400;
       color: $color-light-gray-2;
     }
+
+    &:disabled {
+      background-color: $color-mid-gray-1;
+      border-color: transparent;
+    }
   }
 }
