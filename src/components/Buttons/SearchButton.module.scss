@@ -7,6 +7,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-mid-blue;
+  }
+
+  &:active {
+    background-color: $color-dark-blue;
+  }
+
+  &:disabled {
+    background-color: $color-light-gray-3;
+    cursor: default;
+    .button-search__svg {
+      fill: $color-mid-gray-1;
+    }
+  }
+
+  &:hover,
+  &:active {
+    .button-search__svg {
+      fill: $color-white;
+    }
+  }
 
   &__text {
     font-family: $font-open-sans;
@@ -15,7 +39,7 @@
   }
 
   &__svg {
-    fill: currentColor;
+    fill: $color-white;
   }
 }
 
