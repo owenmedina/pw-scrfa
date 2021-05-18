@@ -8,7 +8,7 @@ interface Props {
 
 const Addresses: FC<Props> = ({addresses}) => {
     return <div>
-        {addresses.map(address => <AddressComponent address={address}/>)}
+        {addresses.map(address => <AddressComponent key={address.id} address={address}/>)}
     </div>;
 }
 
