@@ -9,6 +9,10 @@
   align-items: center;
   cursor: pointer;
 
+  @include respond(xl) {
+    padding: 0.5rem;
+  }
+
   &:hover {
     background-color: $color-mid-blue;
   }
