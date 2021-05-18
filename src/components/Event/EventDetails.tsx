@@ -19,7 +19,7 @@ const EventDetails: FC<Props> = ({title, location, date, contact, tags}) => {
     const minutes = date.getMinutes();
     return <div className={styles['event-details']}>
         <div>
-            {tags.map(tag => <TagComponent text={tag.text} color={tag.color}/>)}
+            {tags.map(tag => <TagComponent text={tag.text} color={tag.color} key={tag.id}/>)}
         </div>
         <div className={styles['event-details__title']}>{title}</div>
         <EventDetail otherClasses={[styles['event-detail']]} icon={'location'} text={location}/>

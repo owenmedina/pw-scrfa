@@ -8,7 +8,7 @@ interface Props {
 
 const Sections: React.FC<Props> = ({sections}) => {
     return <div className={styles.sections}>
-        {sections.map(section => <Card icon={section.icon} title={section.title}/>)}
+        {sections.map(section => <Card icon={section.icon} title={section.title} key={section.id}/>)}
     </div>;
 }
 

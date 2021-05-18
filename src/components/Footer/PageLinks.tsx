@@ -8,7 +8,7 @@ interface Props {
 
 const PageLinks: FC<Props> = ({links}) => {
     return <div className={styles['page-links']}>
-        {links.map(link => <a className={styles['page-link']} href={link.reference}>{link.title}</a>)}
+        {links.map(link => <a className={styles['page-link']} href={link.reference} key={link.id}>{link.title}</a>)}
     </div>;
 }
 

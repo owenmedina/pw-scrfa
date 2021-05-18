@@ -1,6 +1,9 @@
+import { v4 as uuidv4 } from 'uuid';
+
 import Tag from "./Tag";
 
 interface EventInterface {
+    id: string;
     title: string;
     location: string;
     date: Date;
@@ -9,6 +12,7 @@ interface EventInterface {
 }
 
 class EventClass implements EventInterface {
+    id: string;
     title: string;
     location: string;
     date: Date;
@@ -16,6 +20,7 @@ class EventClass implements EventInterface {
     tags: Tag[];
 
     constructor(title: string, location: string, date: Date, contact: string, tags?: Tag[]) {
+        this.id = uuidv4();
         this.title = title;
         this.location = location;
         this.date = date;

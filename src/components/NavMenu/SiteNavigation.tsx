@@ -8,7 +8,7 @@ interface Props {
 
 const SiteNavigation: FC<Props> = ({links}) => {
     return <ul className={styles['site-navigation']}>
-        {links.map(link => <li>
+        {links.map(link => <li key={link.id}>
             <a href={link.reference}>{link.title}</a>
         </li>)}
     </ul>;
