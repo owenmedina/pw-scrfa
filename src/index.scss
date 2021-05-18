@@ -72,3 +72,12 @@ h3 {
   font-style: italic;
   font-size: 1.6rem;
 }
+
+/////////////////////// MIXINS ///////////////////////
+@mixin respond($bp) {
+  @if ($bp == xl) {
+    @media only screen and (min-width: 120em) {
+      @content;
+    } // 1920 px
+  }
+}
