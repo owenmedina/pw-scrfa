@@ -23,6 +23,10 @@
     @include respond(xl) {
       margin: 1.2rem 0;
     }
+
+    @include respond(l) {
+      margin: 0.5rem 0;
+    }
   }
 
   li {
@@ -39,6 +43,10 @@
       font-family: $font-open-sans;
       color: $color-dark-gray;
       font-size: 1.75rem;
+
+      @include respond(l) {
+        font-size: 1.6rem;
+      }
     }
   }
 }

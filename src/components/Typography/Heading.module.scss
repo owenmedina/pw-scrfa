@@ -50,6 +50,10 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 
+  @include respond(l) {
+    line-height: 1.7;
+  }
+
   &::before {
     @extend %bar;
     width: 4.25rem;

@@ -81,4 +81,10 @@ h3 {
       @content;
     }
   }
+  @if ($bp == l) {
+    @media only screen and (max-width: 81.875em) {
+      // 1310px
+      @content;
+    }
+  }
 }
