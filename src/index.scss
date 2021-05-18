@@ -76,8 +76,9 @@ h3 {
 /////////////////////// MIXINS ///////////////////////
 @mixin respond($bp) {
   @if ($bp == xl) {
-    @media only screen and (min-width: 120em) {
+    @media only screen and (max-width: 84.375em) {
+      // 1350px
       @content;
-    } // 1920 px
+    }
   }
 }
