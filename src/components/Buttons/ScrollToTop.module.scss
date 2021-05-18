@@ -11,4 +11,18 @@
   & > *:first-child {
     margin-right: 1.15rem;
   }
+
+  &:hover {
+    button {
+      background-color: $color-mid-blue;
+      fill: $color-white;
+    }
+  }
+
+  &:active {
+    button {
+      background-color: $color-dark-blue;
+      fill: $color-white;
+    }
+  }
 }
