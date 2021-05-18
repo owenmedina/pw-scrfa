@@ -9,7 +9,7 @@ interface Props {
 const SolidButton: FC<Props> = ({text, otherClasses}) => {
     const classes = otherClasses ?? [];
     classes.push(styles['button-solid']);
-    return <button className={classes.join(" ")}>{text}</button>;
+    return <div role={'button'} className={classes.join(" ")}>{text}</div>;
 }
 
 export default SolidButton;
