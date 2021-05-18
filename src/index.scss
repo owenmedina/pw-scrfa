@@ -75,13 +75,13 @@ h3 {
 
 /////////////////////// MIXINS ///////////////////////
 @mixin respond($bp) {
-  @if ($bp == xl) {
+  @if ($bp == xxxl) {
     @media only screen and (max-width: 84.375em) {
       // 1350px
       @content;
     }
   }
-  @if ($bp == l) {
+  @if ($bp == xxl) {
     @media only screen and (max-width: 81.875em) {
       // 1310px
       @content;

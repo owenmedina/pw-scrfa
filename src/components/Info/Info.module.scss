@@ -26,7 +26,7 @@
   }
 
   .button-more {
-    @include respond(xl) {
+    @include respond(xxxl) {
       display: inline-block;
     }
   }
@@ -37,7 +37,7 @@
     display: grid;
     justify-content: end;
 
-    @include respond(xl) {
+    @include respond(xxxl) {
       margin-top: 3.5rem;
     }
   }
