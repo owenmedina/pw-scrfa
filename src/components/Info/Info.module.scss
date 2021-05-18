@@ -36,5 +36,9 @@
     margin-top: 7rem;
     display: grid;
     justify-content: end;
+
+    @include respond(xl) {
+      margin-top: 3.5rem;
+    }
   }
 }
