@@ -8,6 +8,10 @@
 
   &:not(:last-child) {
     margin-bottom: 2rem;
+
+    @include respond(xxs) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__title {

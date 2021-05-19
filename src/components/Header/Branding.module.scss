@@ -44,5 +44,9 @@
     @include respond(xs) {
       font-size: 1.5rem;
     }
+
+    @include respond(xxs) {
+      font-size: 1.3rem;
+    }
   }
 }

@@ -42,5 +42,9 @@
     @include respond(xs) {
       margin-top: 1.75rem;
     }
+
+    @include respond(xxs) {
+      margin-top: 1rem;
+    }
   }
 }
