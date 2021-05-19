@@ -39,6 +39,10 @@
     @include respond(xxl) {
       margin: 0.5rem 0;
     }
+
+    @include respond(xxxs) {
+      margin: 0.15rem 0;
+    }
   }
 
   li {
@@ -48,6 +52,10 @@
 
     @include respond(xs) {
       padding: 0.1rem 0;
+    }
+
+    @include respond(xxxs) {
+      height: 3rem;
     }
 
     &:hover {
