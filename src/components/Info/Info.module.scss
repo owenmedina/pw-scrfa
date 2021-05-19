@@ -32,12 +32,8 @@
     &:not(:last-child) {
       margin-bottom: 2.5rem;
 
-      @include respond(xxxs) {
-        margin-bottom: 1rem;
-      }
-
-      @include respond(xxxxs) {
-        margin-bottom: 0rem;
+      @include respond(xxs) {
+        margin-bottom: 1.5rem;
       }
     }
   }

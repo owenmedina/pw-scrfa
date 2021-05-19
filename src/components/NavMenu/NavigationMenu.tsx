@@ -16,10 +16,10 @@ const NavigationMenu: FC<Props> = ({links, show}) => {
         setNavMenuShow(show);
     }, [show]);
 
-    return <div className={classes.join(' ')}>
+    return <nav className={classes.join(' ')}>
         <SiteNavigation links={links}/>
         <SectionNavigation />
-    </div>;
+    </nav>;
 }
 
 export default NavigationMenu;
