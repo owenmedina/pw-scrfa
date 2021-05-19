@@ -11,6 +11,13 @@
   align-items: center;
   justify-content: center;
 
+  @include respond(m) {
+    .search-svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
   &:hover {
     background-color: $color-cerulean-blue;
   }
