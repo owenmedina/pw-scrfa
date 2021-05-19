@@ -47,6 +47,10 @@
       @include respond(xxl) {
         font-size: 1.6rem;
       }
+
+      @include respond(s) {
+        font-size: 1.5rem;
+      }
     }
   }
 }
