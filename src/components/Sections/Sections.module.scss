@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: center;
 
+  @include respond(xxs) {
+    padding: 0 10rem;
+  }
+
   .section {
     @include respond(xxs) {
       padding: 3rem 4rem;

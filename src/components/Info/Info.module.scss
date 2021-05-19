@@ -11,6 +11,10 @@
   @include respond(m) {
     margin: 2.5rem 20rem 0 20rem;
   }
+  @include respond(xxs) {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
 
   & > *:nth-child(3) {
     display: flex;

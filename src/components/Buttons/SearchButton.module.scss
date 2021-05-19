@@ -18,6 +18,10 @@
     padding: 0.5rem;
   }
 
+  @include respond(xl) {
+    font-size: 1.5rem;
+  }
+
   &:hover {
     background-color: $color-mid-blue;
   }
@@ -49,7 +53,13 @@
 
   &__svg {
     height: 2.1rem;
+    width: 2.1rem;
     fill: $color-white;
+
+    @include respond(xxs) {
+      height: 2rem;
+      width: 2rem;
+    }
   }
 }
 
@@ -57,6 +67,6 @@
   margin-right: 0.25rem;
 
   @include respond(xl) {
-    margin-right: 0;
+    margin-right: 0.2rem;
   }
 }
