@@ -13,8 +13,8 @@ interface Props {
 const SLForm: FC<Props> = ({buttonText, placeholder, buttonStyle, otherClasses}) => {
     const classes = otherClasses ?? [];
     classes.push(styles['search-form']);
-    return <form className={classes.join(' ')}>
-            <input className={`${styles['search-form__input']} ${styles['mr-sm']}`} placeholder={placeholder}></input>
+    return <form className={classes.join(' ')} aria-label={'header-search'} role={'search'}>
+            <input className={`${styles['search-form__input']} ${styles['mr-sm']}`} placeholder={placeholder} aria-label={placeholder}></input>
             <OutlineButton text={buttonText}/>
     </form>;
 };

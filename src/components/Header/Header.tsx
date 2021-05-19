@@ -11,7 +11,7 @@ const Header = () => {
     new Link('About Us', 'https:www.google.com'),
     new Link('Contact Us', 'https:www.google.com'),
     new Link('Boards & Committees', 'https:www.google.com')];
-    return <div className={styles.header}>
+    return <div role="banner" className={styles.header}>
         <NavMenuButton links={links}/>
         <Branding />
         <NavLinks />

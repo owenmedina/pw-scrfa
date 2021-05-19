@@ -17,11 +17,11 @@ const Footer = () => {
     const addresses = [new Address('Main Office', '1000 Assembly St, Rembert Dennis Building, Suite 421', 'Columbia', 'SC', 29201),
     new Address('Geodetic Survey Section', '5 Geology Rd', 'Columbia', 'SC', 29212),
     new Address('Health and Demographics Division', '1000 Assembly St, Rembert Dennis Building, Suite 240', 'Columbia', 'SC', 29201)]
-    return <div className={styles.footer}>
+    return <footer className={styles.footer}>
             <FooterBranding />
             <PageLinks links={pageLinks}/>
             <Addresses addresses={addresses} />
-    </div>;
+    </footer>;
 }
 
 export default Footer;
