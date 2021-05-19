@@ -35,6 +35,10 @@
       @include respond(xxxs) {
         margin-bottom: 1rem;
       }
+
+      @include respond(xxxxs) {
+        margin-bottom: 0rem;
+      }
     }
   }
 
