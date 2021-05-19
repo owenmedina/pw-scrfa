@@ -49,7 +49,7 @@ const Info = () => {
         </div>
     } contentColumns={1}/>];
 
-    return <div className={styles.info}>
+    return <div role={'region'} className={styles.info}>
         <Article title='Popular Services and Links' titleStyle={1} content={<div>{servicesAndLinks.map(l => <LinkComponent otherClasses={[styles['info__content']]}text={l.title} reference={l.reference} key={l.id}/>)}</div>} contentColumns={3}/>
         <Spacer size={'xl'} />
         <div>
