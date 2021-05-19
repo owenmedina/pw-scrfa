@@ -38,5 +38,9 @@
     @include respond(xxxl) {
       margin-top: 3.5rem;
     }
+
+    @include respond(xs) {
+      margin-top: 1.75rem;
+    }
   }
 }
