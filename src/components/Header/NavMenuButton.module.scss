@@ -29,8 +29,13 @@
 
 .nav-menu-icon {
   fill: $color-white;
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;
+  width: 6rem;
+
+  @include respond(xxl) {
+    height: 5rem;
+    width: 5rem;
+  }
 }
 
 .nav-menu-title {
@@ -39,6 +44,11 @@
   letter-spacing: 0.2rem;
   position: relative;
   top: -1rem;
+  font-size: 1.35rem;
+
+  @include respond(xxl) {
+    font-size: 1rem;
+  }
 }
 
 .nav-menu--empty {
