@@ -10,7 +10,7 @@ interface Props {
 const Heading: FC<Props> = ({style, text, otherClasses}) => {
     const classes = otherClasses ?? [];
     classes.push(styles[`heading-${style}`])
-    return <div className={classes.join(' ')}>
+    return <div role={'heading'} className={classes.join(' ')}>
         {text}
     </div>;
 }
