@@ -54,6 +54,10 @@
     line-height: 1.7;
   }
 
+  @include respond(m) {
+    font-size: 1.6rem;
+  }
+
   &::before {
     @extend %bar;
     width: 4.25rem;
