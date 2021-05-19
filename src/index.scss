@@ -80,6 +80,13 @@ $font-roboto-slab: "Roboto Slab", serif;
       @content;
     }
   }
+
+  @if ($bp == xxs) {
+    @media only screen and (max-width: 37.375em) {
+      // 598px
+      @content;
+    }
+  }
 }
 
 html {
@@ -95,6 +102,10 @@ html {
 
   @include respond(m) {
     font-size: 32.5%;
+  }
+
+  @include respond(xxs) {
+    font-size: 30%;
   }
 
   box-sizing: border-box;
