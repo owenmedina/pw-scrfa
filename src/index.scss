@@ -30,32 +30,46 @@ $font-roboto-slab: "Roboto Slab", serif;
 /////////////////////// MIXINS ///////////////////////
 @mixin respond($bp) {
   @if ($bp == xxxl) {
-    @media only screen and (max-width: 84.375em) {
-      // 1350px
+    @media only screen and (max-width: 90.625em) {
+      // 1450px
       @content;
     }
   }
   @if ($bp == xxl) {
-    @media only screen and (max-width: 81.875em) {
-      // 1310px
+    @media only screen and (max-width: 83.125em) {
+      // 1330px
       @content;
     }
   }
   @if ($bp == xl) {
-    @media only screen and (max-width: 66.25em) {
-      // 1060px
+    @media only screen and (max-width: 77.5em) {
+      // 1240px
       @content;
     }
   }
   @if ($bp == l) {
-    @media only screen and (max-width: 66.25em) {
-      // 1060px
+    @media only screen and (max-width: 68.125em) {
+      // 1090px
       @content;
     }
   }
   @if ($bp == m) {
+    @media only screen and (max-width: 65em) {
+      // 1040px
+      @content;
+    }
+  }
+
+  @if ($bp == s) {
     @media only screen and (max-width: 60.625em) {
       // 970px
+      @content;
+    }
+  }
+
+  @if ($bp == xs) {
+    @media only screen and (max-width: 45em) {
+      // 720px
       @content;
     }
   }
@@ -70,6 +84,10 @@ html {
 
   @include respond(m) {
     font-size: 40%;
+  }
+
+  @include respond(m) {
+    font-size: 32.5%;
   }
 
   box-sizing: border-box;
