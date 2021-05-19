@@ -1,0 +1,76 @@
+@import "../../index.scss";
+
+.button-icon-search {
+  padding: 0.5rem;
+  border: 1px $color-cerulean-blue solid;
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(m) {
+    .search-svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  &:hover {
+    background-color: $color-cerulean-blue;
+  }
+
+  &:active {
+    background-color: $color-dark-blue;
+  }
+
+  &:disabled {
+    background-color: $color-light-gray-3;
+    cursor: default;
+  }
+
+  &:hover,
+  &:active,
+  &:disabled {
+    .search-svg {
+      fill: $color-white;
+    }
+  }
+
+  &:disabled {
+    cursor: default;
+  }
+}
+
+.button-icon-search--open {
+  background-color: $color-cerulean-blue;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  .search-svg {
+    fill: $color-white;
+  }
+}
+
+.button-icon-search--close {
+  background-color: $color-white;
+  .search-svg {
+    fill: $color-cerulean-blue;
+  }
+}
+
+.mr-sm {
+  margin-right: 0.75%;
+}
+
+.search-form--nav {
+  position: absolute;
+  right: -1px;
+  top: 100%;
+  padding: 1rem;
+
+  background-color: $color-cerulean-blue;
+  border-radius: 2px;
+  border-top-right-radius: 0px;
+}

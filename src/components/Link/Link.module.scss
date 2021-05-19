@@ -1,0 +1,10 @@
+@import "../../index.scss";
+
+.link {
+  font-family: $font-open-sans;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $color-cerulean-blue;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1.5px;
+}

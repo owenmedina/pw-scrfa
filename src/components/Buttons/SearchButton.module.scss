@@ -1,0 +1,72 @@
+@import "../../index.scss";
+
+.button-search {
+  background-color: $color-cerulean-blue;
+  color: $color-white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(xl) {
+    padding: 0.5rem;
+  }
+
+  @include respond(xl) {
+    font-size: 1.5rem;
+  }
+
+  &:hover {
+    background-color: $color-mid-blue;
+  }
+
+  &:active {
+    background-color: $color-dark-blue;
+  }
+
+  &:disabled {
+    background-color: $color-light-gray-3;
+    cursor: default;
+    .button-search__svg {
+      fill: $color-mid-gray-1;
+    }
+  }
+
+  &:hover,
+  &:active {
+    .button-search__svg {
+      fill: $color-white;
+    }
+  }
+
+  &__text {
+    font-family: $font-open-sans;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__svg {
+    height: 2.1rem;
+    width: 2.1rem;
+    fill: $color-white;
+
+    @include respond(xxs) {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+}
+
+.mr-sm {
+  margin-right: 0.25rem;
+
+  @include respond(xl) {
+    margin-right: 0.2rem;
+  }
+}

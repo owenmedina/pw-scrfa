@@ -1,0 +1,28 @@
+@import "../../index.scss";
+
+%spacer {
+  width: 1rem;
+}
+
+.spacer-xs {
+  @extend %spacer;
+  height: 0.75rem;
+}
+
+.spacer-md {
+  @extend %spacer;
+  height: 3rem;
+}
+
+.spacer-xl {
+  @extend %spacer;
+  height: 6rem;
+
+  @include respond(xs) {
+    height: 4rem;
+  }
+
+  @include respond(xxxs) {
+    height: 2rem;
+  }
+}

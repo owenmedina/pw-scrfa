@@ -1,0 +1,66 @@
+@import "../../index.scss";
+
+%heading-core {
+  font-family: $font-open-sans;
+  color: $color-dark-blue;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  font-size: 2.5rem;
+
+  position: relative;
+}
+
+%bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 0;
+}
+
+.heading-1 {
+  @extend %heading-core;
+  text-transform: uppercase;
+  line-height: 3.25;
+
+  &::before {
+    @extend %bar;
+    width: 100%;
+    border-bottom: 1rem $color-dark-blue solid;
+    background-color: currentColor;
+  }
+}
+
+.heading-2 {
+  @extend %heading-core;
+  line-height: 2.75;
+
+  &::before {
+    @extend %bar;
+    width: 4.25rem;
+    border-bottom: 0.3rem $color-gold solid;
+  }
+}
+
+.heading-3 {
+  @extend %heading-core;
+  line-height: 2.75;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  @include respond(xxl) {
+    line-height: 1.7;
+  }
+
+  @include respond(m) {
+    font-size: 1.6rem;
+  }
+
+  &::before {
+    @extend %bar;
+    width: 4.25rem;
+    border-bottom: 0.3rem $color-gold solid;
+  }
+}

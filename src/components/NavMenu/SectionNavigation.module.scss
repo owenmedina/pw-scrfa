@@ -1,0 +1,88 @@
+@import "../../index.scss";
+
+.section-navigation {
+  flex: 1;
+  background-color: $color-white;
+  height: 100%;
+  box-shadow: inset -5px 5px 5px -5px $color-light-gray-3;
+  padding: 1.35rem 6rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+
+  @include respond(xs) {
+    padding-top: 3rem;
+  }
+
+  &__heading {
+    &:hover {
+      text-decoration: underline;
+    }
+
+    @include respond(xs) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(xxs) {
+      font-size: 1.4rem;
+    }
+  }
+
+  ul {
+    margin: 1.75rem 0;
+
+    @include respond(xxxl) {
+      margin: 1.2rem 0;
+    }
+
+    @include respond(xxl) {
+      margin: 0.5rem 0;
+    }
+
+    @include respond(xxxs) {
+      margin: 0.15rem 0;
+    }
+  }
+
+  li {
+    list-style: none;
+    text-align: left;
+    padding: 0.35rem 0;
+
+    @include respond(xs) {
+      padding: 0.1rem 0;
+    }
+
+    @include respond(xxxs) {
+      height: 3rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: $font-open-sans;
+      color: $color-dark-gray;
+      font-size: 1.75rem;
+
+      @include respond(xxl) {
+        font-size: 1.6rem;
+      }
+
+      @include respond(s) {
+        font-size: 1.5rem;
+      }
+
+      @include respond(xs) {
+        font-size: 1.35rem;
+      }
+
+      @include respond(xxs) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

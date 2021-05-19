@@ -1,0 +1,23 @@
+@import "../../index.scss";
+
+.nav-links {
+  height: 100%;
+  width: 25%;
+  margin-right: 1%;
+
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+
+  @include respond(xxs) {
+    width: 30%;
+  }
+}
+
+.nav-link {
+  font-family: $font-open-sans;
+  font-size: 1.25rem;
+  color: $color-dark-blue;
+  text-transform: uppercase;
+  cursor: pointer;
+}

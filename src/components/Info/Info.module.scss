@@ -1,0 +1,71 @@
+@import "../../index.scss";
+
+.info {
+  grid-row: info-start / info-end;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 2.5rem 15rem 0 15rem;
+
+  @include respond(m) {
+    margin: 2.5rem 20rem 0 20rem;
+  }
+
+  @include respond(xxs) {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
+
+  & > *:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8.75rem;
+
+    & > * {
+      flex: 1;
+    }
+  }
+
+  &__content {
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+
+      @include respond(xxs) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .button-more {
+    display: inline-block;
+  }
+
+  &__footer {
+    width: 100%;
+    margin-top: 7rem;
+    display: grid;
+    justify-content: end;
+
+    @include respond(xxxl) {
+      margin-top: 3.5rem;
+    }
+
+    @include respond(s) {
+      margin-top: 2rem;
+    }
+
+    @include respond(xs) {
+      margin-top: 1.5rem;
+    }
+
+    @include respond(xxs) {
+      margin-top: 1rem;
+    }
+
+    @include respond(xxxs) {
+      margin-bottom: rem;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../index.scss";
+
+.event-details {
+  &:not(:last-of-type) {
+    border-bottom: 0.15rem solid $color-light-gray-1;
+  }
+
+  &__title {
+    font-family: $font-open-sans;
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin: 0.35rem 0 1rem 0;
+  }
+  .event-detail {
+    margin-bottom: 1rem;
+    color: orangered;
+  }
+}

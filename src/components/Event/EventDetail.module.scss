@@ -1,0 +1,36 @@
+@import "../../index.scss";
+
+.event-detail {
+  display: flex-inline;
+  align-items: start;
+  &__icon {
+    padding: 0.2rem 1rem 0 0;
+    fill: $color-gold;
+    height: 1rem;
+
+    @include respond(xxs) {
+      padding: 0 0.5rem 0 0;
+    }
+
+    & > * {
+      height: 1.4rem;
+      width: 1.4rem;
+
+      @include respond(xxs) {
+        height: 1rem;
+        width: 1rem;
+      }
+    }
+  }
+
+  &__text {
+    font-family: $font-open-sans;
+    color: $color-dark-gray;
+    font-size: 1.3rem;
+    line-height: 1.75rem;
+
+    @include respond(xxs) {
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../index.scss";
+
+.nav-menu-button {
+  height: 100%;
+  background-color: $color-light-blue;
+  border: none;
+  cursor: pointer;
+  position: relative;
+
+  flex-basis: 5%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(xl) {
+    padding: 1rem;
+  }
+
+  &:hover {
+    background-color: $color-mid-blue;
+  }
+
+  &:active {
+    background-color: $color-dark-blue;
+  }
+}
+
+.nav-menu-icon {
+  fill: $color-white;
+  height: 6rem;
+  width: 6rem;
+
+  @include respond(xxl) {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+.nav-menu-title {
+  font-family: $font-open-sans;
+  color: $color-white;
+  letter-spacing: 0.2rem;
+  position: relative;
+  top: -1rem;
+  font-size: 1.35rem;
+
+  @include respond(xxl) {
+    font-size: 1rem;
+  }
+}
+
+.nav-menu--empty {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  width: 100vw;
+  border-bottom: 0.75rem $color-dark-blue solid;
+}

@@ -1,0 +1,44 @@
+@import "../../index.scss";
+
+.search-form {
+  width: 37rem;
+
+  display: flex;
+  column-gap: 1rem;
+
+  & > *:first-child {
+    flex: 1;
+  }
+
+  & > *:last-child {
+    flex-basis: 20%;
+    padding: 1rem 2rem;
+  }
+
+  &__input {
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid $color-light-gray-2;
+    border-radius: 1px;
+
+    font-size: 1.35rem;
+    font-family: $font-open-sans;
+
+    &:hover,
+    &:focus {
+      border-color: $color-cerulean-blue;
+    }
+
+    &::placeholder {
+      font-size: 1.35rem;
+      font-family: $font-open-sans;
+      font-weight: 400;
+      color: $color-light-gray-2;
+    }
+
+    &:disabled {
+      background-color: $color-mid-gray-1;
+      border-color: transparent;
+    }
+  }
+}

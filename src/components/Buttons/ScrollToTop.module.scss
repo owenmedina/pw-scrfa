@@ -1,0 +1,28 @@
+@import "../../index.scss";
+
+.scroll-to-top {
+  font-family: $font-open-sans;
+  font-size: 1.45rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  & > *:first-child {
+    margin-right: 1.15rem;
+  }
+
+  &:hover {
+    button {
+      background-color: $color-mid-blue;
+      fill: $color-white;
+    }
+  }
+
+  &:active {
+    button {
+      background-color: $color-dark-blue;
+      fill: $color-white;
+    }
+  }
+}

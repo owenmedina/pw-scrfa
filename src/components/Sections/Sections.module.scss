@@ -1,0 +1,20 @@
+@import "../../index.scss";
+
+.sections {
+  grid-row: sections-start / sections-end;
+  background-color: $color-light-gray-1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include respond(xxs) {
+    padding: 0 10rem;
+  }
+
+  .section {
+    @include respond(xxs) {
+      padding: 3rem 4rem;
+    }
+  }
+}

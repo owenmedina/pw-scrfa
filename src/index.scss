@@ -1,0 +1,167 @@
+/////////////////////// COLORS ///////////////////////
+$color-white: #fff;
+$color-white-2: #f3f6f9;
+
+$color-light-gray-1: #e1e5ea;
+$color-light-gray-2: #ccc;
+$color-light-gray-3: #c3c3c3;
+$color-mid-gray-1: #757575;
+$color-mid-gray-2: #666;
+$color-dark-gray: #333;
+
+$color-red: #e9261d;
+
+$color-pale-gold: #d2b859;
+$color-gold: #8c6910;
+
+$color-aqua-blue: #35b0cb;
+$color-pale-blue: #415a7b;
+$color-pastel-blue: #93a4bd;
+$color-cerulean-blue: #0074c1;
+$color-light-blue: #3068ad;
+$color-mid-blue: #225089;
+$color-dark-blue: #1b3a61;
+
+/////////////////////// FONTS ///////////////////////
+$font-open-sans: "Open Sans", sans-serif;
+$font-roboto-condensed: "Roboto Condensed", sans-serif;
+$font-roboto-slab: "Roboto Slab", serif;
+
+/////////////////////// MIXINS ///////////////////////
+@mixin respond($bp) {
+  @if ($bp == xxxl) {
+    @media only screen and (max-width: 90.625em) {
+      // 1450px
+      @content;
+    }
+  }
+  @if ($bp == xxl) {
+    @media only screen and (max-width: 83.125em) {
+      // 1330px
+      @content;
+    }
+  }
+  @if ($bp == xl) {
+    @media only screen and (max-width: 77.5em) {
+      // 1240px
+      @content;
+    }
+  }
+  @if ($bp == l) {
+    @media only screen and (max-width: 68.125em) {
+      // 1090px
+      @content;
+    }
+  }
+  @if ($bp == m) {
+    @media only screen and (max-width: 65em) {
+      // 1040px
+      @content;
+    }
+  }
+
+  @if ($bp == s) {
+    @media only screen and (max-width: 60.625em) {
+      // 970px
+      @content;
+    }
+  }
+
+  @if ($bp == xs) {
+    @media only screen and (max-width: 43.625em) {
+      // 698px
+      @content;
+    }
+  }
+
+  @if ($bp == xxs) {
+    @media only screen and (max-width: 37.375em) {
+      // 598px
+      @content;
+    }
+  }
+
+  @if ($bp == xxxs) {
+    @media only screen and (max-width: 33.75em) {
+      // 540px
+      @content;
+    }
+  }
+
+  @if ($bp == xxxxs) {
+    @media only screen and (max-width: 22.5em) {
+      // 360px
+      @content;
+    }
+  }
+}
+
+html {
+  font-size: 62.5%; // each rem is 10px by default
+
+  @include respond(xl) {
+    font-size: 55%;
+  }
+
+  @include respond(m) {
+    font-size: 40%;
+  }
+
+  @include respond(m) {
+    font-size: 32.5%;
+  }
+
+  @include respond(xxs) {
+    font-size: 30%;
+  }
+
+  @include respond(xxxs) {
+    font-size: 20%;
+  }
+
+  @include respond(xxxxs) {
+    font-size: 17.5%;
+  }
+
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/////////////////////// GLOBAL CLASSES ///////////////////////
+//////////// TYPOGRAPHY ////////////
+h2 {
+  font-family: $font-roboto-slab;
+  color: $color-white;
+  font-size: 2.8rem;
+  line-height: 1.35;
+}
+
+h3 {
+  font-family: $font-open-sans;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: $color-dark-blue;
+  text-transform: uppercase;
+}
+
+.header-7 {
+  font-family: $font-roboto-slab;
+  color: $color-dark-blue;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.subheader-7 {
+  font-family: $font-roboto-condensed;
+  color: $color-pale-blue;
+  font-style: italic;
+  font-size: 1.6rem;
+}
