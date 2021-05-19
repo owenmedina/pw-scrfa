@@ -8,6 +8,10 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   align-items: center;
+
+  @include respond(xxs) {
+    width: 30%;
+  }
 }
 
 .nav-link {
