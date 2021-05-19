@@ -1,3 +1,5 @@
+@import "../../index.scss";
+
 .branding {
   height: 100%;
   width: 35%;
@@ -7,8 +9,8 @@
   align-items: center;
 
   &__logo {
-    height: 8rem;
-    width: 8rem;
+    height: 9.5rem;
+    width: 9.5rem;
     margin-right: 3%;
     opacity: 100%;
     cursor: pointer;
@@ -25,5 +27,18 @@
   &__name,
   &__description {
     text-align: left;
+    font-size: 2rem;
+
+    @include respond(xxxl) {
+      font-size: 1.8rem;
+    }
+
+    @include respond(xxl) {
+      font-size: 1.65rem;
+    }
+
+    @include respond(l) {
+      font-size: 1.55rem;
+    }
   }
 }
