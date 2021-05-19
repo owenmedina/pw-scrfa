@@ -19,7 +19,7 @@ const NavigationMenu: FC<Props> = ({links, show}) => {
     return <nav className={classes.join(' ')}>
         <SiteNavigation links={links}/>
         <SectionNavigation />
-    </nav>;
+    </nav >;
 }
 
 export default NavigationMenu;
